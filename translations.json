@@ -1,0 +1,10 @@
+{
+  "en": {
+    "common.greeting": "Hello",
+    "common.farewell": "Goodbye"
+  },
+  "fr": {
+    "common.greeting": "Bonjour",
+    "common.farewell": "Au revoir"
+  }
+}

@@ -1,0 +1,40 @@
+
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username":"ashok",
+  "password":"A123456"
+}
+
+###
+
+http://localhost:3000/translation/en/common.greeting
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXNob2siLCJwYXNzd29yZCI6IkExMjM0NTYiLCJpYXQiOjE3MDk4MzQ1NzUsImV4cCI6MTcwOTgzNTQ3NX0.o3lu1tkoqSazlnxI3tYQRZQ5jvkHdeFCxD8uuEfxM48
+
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXNob2siLCJwYXNzd29yZCI6IkExMjM0NTYiLCJpYXQiOjE3MDk4MzQ1NzUsImV4cCI6MTcwOTgzNTQ3NX0.o3lu1tkoqSazlnxI3tYQRZQ5jvkHdeFCxD8uuEfxM48
+
+###
+GET http://localhost:3000/posts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXNob2siLCJwYXNzd29yZCI6IkExMjM0NTYiLCJpYXQiOjE3MDk4MzYwNDYsImV4cCI6MTcwOTgzNjk0Nn0.DJybvByTGOfEx9cWNOJSVwxnFRS4b3KlRyApa-GLlxY
